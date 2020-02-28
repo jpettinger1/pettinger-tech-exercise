@@ -1,0 +1,68 @@
+<html>
+<head>
+<style>
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:350px;
+    float:left;
+    padding:10px;	 	 
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1> Insert Patient Information </h1>
+</header>
+
+<nav>
+<h4>Search Patients By</h4>
+<a href="simpleFormSearch.html">Name</a> <br>
+<a href="SearchByEmail.html">Email</a> <br>
+<a href="SearchByAddress.html">Address</a> <br>
+</nav>
+
+<section>
+	<h1>Input Patient</h1>
+	
+	<form action="SimpleFormInsert" method="POST">
+	
+		Patient Name: <input type="text" name="userName"> <br />
+		Email: <input type="text" name="email"> <br />
+		Address: <input type="text" name="address"> <br />
+		Phone: <input type="text" name="phone"> <br />
+		Today's Date: <input type="text" name="lastvisit"><br />
+		Patient Info: <input type="text" name="patientinfo"><br />
+		
+		
+		
+		<input type="submit" value="Submit" />
+	</form>
+
+</section>
+
+<footer>
+Copyright
+</footer>
+</body>
+</html>
